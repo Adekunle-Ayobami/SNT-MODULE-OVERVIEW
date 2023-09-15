@@ -26,19 +26,26 @@ a {
   height: 40px;
   padding: 0 5px;
 }
-.search-parent {
-  display: flex;
-  background-color: #ebedf0;
-  padding: 7px;
-  border-radius: 6px;
-  width: 30%;
+.input-container {
+  position: relative;
 }
-.input-field {
-  padding: 8px;
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px; /* Adjust the icon size */
+  color: #555; /* Adjust the icon color */
+}
+
+.input-field1 {
+  padding: 12px 100px 12px 30px;
+  background-color: #ebedf0;
   border: none;
   outline: none;
-  background-color: #ebedf0;
-  width: 70%;
+  width: 80%;
+  border-radius: 6px;
 }
 .icon {
   margin-right: 10px;
@@ -230,7 +237,7 @@ li {
 }
 .heading {
   display: flex;
-  gap: 800px;
+  gap: 730px;
 }
 .heading button {
   border-radius: 9.5px;

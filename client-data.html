@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SNT Overview | Dashboard</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <title>SNT Client Data</title>
+    <link rel="stylesheet" href="css/client-data.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -27,10 +27,10 @@
         <div class="crm128-wrapper">
           <img src="public/SNT.svg" alt="" />
         </div>
-        <div class="input-container">
+        <div class="input-container1">
           <i class="fas fa-search"></i>
           <input
-            class="input-field1"
+            class="input-field12"
             type="text"
             name="search"
             placeholder="Search"
@@ -52,11 +52,11 @@
     </header>
     <section class="section">
       <div class="menu">
-        <div class="side-tab selected">
+        <div class="side-tab">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
           <div class="side-bar"><a href="/~g12dev/CRM128_A/">Overview</a></div>
         </div>
-        <div class="client-data">
+        <div class="client-data selected">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
           <div class="side-bar">
             <a href="/~g12dev/CRM128_A/clientm/">Client Data</a>
@@ -122,87 +122,150 @@
         </div>
       </div>
 
-      <!-- First Box -->
-      <div class="box1">
-        <div class="inner-box">
-          <span style="margin-left: -15px; font-weight: 600">Bookings</span>
-          <div>
-            <span style="margin-right: 25px; border-bottom: 5px solid blue"
-              ><a href="index.html">Today</a></span
-            >
-            <span style="margin-right: 25px"
-              ><a href="this-week.html">This Week</a></span
-            >
-            <span style="margin-right: 25px">This Month</span>
-            <span>This Year</span>
-            <hr class="dt" />
+      <div class="frame-group">
+        <div style="display: flex">
+          <div style="margin-right: 10px; color: #003e9c; width: 100%">
+            Client Data
           </div>
         </div>
-        <div style="margin-left: -15px" class="inner-boxes">
-          <div style="padding-right: 50px" class="one">
-            <img class="grab" src="public/grab.svg" alt="" />
-            <img
-              class="pending"
-              src="public/icons8pending100-1@2x.png"
-              alt=""
+        <div class="button-group">
+          <button class="bt2" id="overlayBtn">Add Client</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="back-group">
+        <div class="input-group">
+          <div class="input-container">
+            <i class="fas fa-search"></i>
+            <input
+              class="input-field1"
+              type="text"
+              name="search"
+              placeholder="Filter"
             />
-            <span style="margin-left: 10px">Pending</span>
-            <span class="num">12</span>
           </div>
-          <div style="padding-right: 50px" class="one">
-            <img class="grab" src="public/grab.svg" alt="" />
-            <img
-              class="pending"
-              src="public/icons8inprogress100-1@2x.png"
-              alt=""
-            />
-            <span style="margin-left: 10px">Pending</span>
-            <span class="num">8</span>
-          </div>
-          <div class="one">
-            <img class="grab" src="public/grab.svg" alt="" />
-            <img
-              class="pending"
-              src="public/icons8taskcompleted80-1-1@2x.png"
-              alt=""
-            />
-            <span style="margin-left: 10px">Pending</span>
-            <span class="num">6</span>
+          <select class="select" name="">
+            <option value="">Daily</option>
+            <option value="">Weekly</option>
+            <option value="" selected>Monthly</option>
+            <option value="">Yealy</option>
+          </select>
+          <select class="select1" name="">
+            <option value="">January</option>
+            <option value="">February</option>
+            <option value="">March</option>
+            <option value="">April</option>
+            <option value="">May</option>
+            <option value="">June</option>
+            <option value="">July</option>
+            <option value="">August</option>
+            <option value="">September</option>
+            <option value="">October</option>
+            <option value="">November</option>
+            <option value="">December</option>
+          </select>
+          <select class="select2" name="">
+            <option value="">Category</option>
+            <option value="">Admin</option>
+            <option value="">User</option>
+          </select>
+          <div class="sort">
+            <img style="width: 15px" src="public/sort_minor.png" alt="" /><span
+              style="margin-bottom: 7px"
+              >Sort</span
+            >
           </div>
         </div>
       </div>
 
-      <div class="thead">
-        <div class="heading">
-          <div style="width: 40%">Client Data</div>
-          <button>View all</button>
+      <!--  -->
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Plate Number</th>
+          <th>Engine Number</th>
+          <th>Car Color</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Options</th>
+        </tr>
+        <tr>
+          <td>Abby Kate</td>
+          <td>LLI9 VBX</td>
+          <td>52VWC10038</td>
+          <td>Red</td>
+          <td>abbykate.mail</td>
+          <td>0233394847</td>
+          <td>London</td>
+        </tr>
+        <tr>
+          <td>Abby Kate</td>
+          <td>LT63 NNA</td>
+          <td>52VWC10038</td>
+          <td>Blue</td>
+          <td>abbykate.mail</td>
+          <td>0233395234</td>
+          <td>London</td>
+        </tr>
+        <tr>
+          <td>Kamson Jill</td>
+          <td>KA44 TYS</td>
+          <td>52VWC10038</td>
+          <td>Green</td>
+          <td>kamsonjill.mail</td>
+          <td>0233391890</td>
+          <td>London</td>
+        </tr>
+        <tr>
+          <td>Lily Sam</td>
+          <td>KSA8 IFF</td>
+          <td>52VWC10038</td>
+          <td>Yellow</td>
+          <td>lilysam.mail</td>
+          <td>0233390023</td>
+          <td>London</td>
+        </tr>
+        <tr>
+          <td>Ojo Wale</td>
+          <td>VX51 DDL</td>
+          <td>52VWC10038</td>
+          <td>Black</td>
+          <td>ojowale.mail</td>
+          <td>0233399997</td>
+          <td>London</td>
+        </tr>
+      </table>
+
+      <!--  -->
+      <div class="pagination">
+        <img class="page-disabled" alt="" src="./public/page--disabled.svg" />
+
+        <div class="page-active">
+          <div class="page-active1">
+            <b class="num">1</b>
+          </div>
         </div>
-        <table class="table">
-          <tr>
-            <th>Name</th>
-            <th>Plate Number</th>
-            <th>Phone Number</th>
-            <th>Location</th>
-          </tr>
-          <tr>
-            <td>Abby Kate</td>
-            <td>LLI9 VBX</td>
-            <td>0233394847</td>
-            <td>London</td>
-          </tr>
-          <tr>
-            <td>Abby Kate</td>
-            <td>LT63 NNA</td>
-            <td>0233394847</td>
-            <td>London</td>
-          </tr>
-          <tr>
-            <td>Kamson Jill</td>
-            <td>KA44 TYS</td>
-            <td>0233394847</td>
-            <td>London</td>
-          </tr>
-        </table>
+        <div class="page-disabled">
+          <div class="page-default1">
+            <b class="num">2</b>
+          </div>
+        </div>
+        <div class="page-disabled">
+          <div class="page-default1">
+            <b class="num">...</b>
+          </div>
+        </div>
+        <div class="page-disabled">
+          <div class="page-default1">
+            <b class="num">9</b>
+          </div>
+        </div>
+        <div class="page-disabled">
+          <div class="page-default1">
+            <b class="num">10</b>
+          </div>
+        </div>
+        <img class="page-master" alt="" src="./public/page--master.svg" />
       </div>
     </section>
     <footer>
