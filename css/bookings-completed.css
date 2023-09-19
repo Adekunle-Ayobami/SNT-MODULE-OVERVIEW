@@ -172,7 +172,7 @@ li {
   margin-top: 20px;
   margin-left: 20px;
   width: 100%;
-  gap: 700px;
+  gap: 712px;
   position: absolute;
   top: 15px;
   left: 320px;
@@ -207,14 +207,14 @@ li {
 .btn3 {
   margin-right: -3px;
   border: none;
-  background-color: #e6f0ff;
+  background-color: #ffffff;
   padding: 10px 20px 10px 20px;
   color: #7a8699;
-  border-top: 2px solid #091e42;
 }
 .btn4 {
   border: none;
-  background-color: #ffffff;
+  background-color: #e6f0ff;
+  border-top: 2px solid #091e42;
   padding: 10px 20px 10px 20px;
 }
 .btn1:hover {
@@ -271,10 +271,10 @@ li {
   align-items: center;
 }
 /* .input-container {
-      position: absolute;
-      top: 75px;
-      right: 17.1%;
-    } */
+        position: absolute;
+        top: 75px;
+        right: 17.1%;
+      } */
 
 .input-container i {
   position: relative;
@@ -294,8 +294,8 @@ li {
 }
 .select {
   /* position: absolute;
-      top: 75px;
-      right: 11.3%; */
+        top: 75px;
+        right: 11.3%; */
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -303,8 +303,8 @@ li {
 }
 .select1 {
   /* position: absolute;
-      top: 75px;
-      right: 20.3%; */
+        top: 75px;
+        right: 20.3%; */
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -312,8 +312,8 @@ li {
 }
 .select2 {
   /* position: absolute;
-      top: 75px;
-      right: 25.3%; */
+        top: 75px;
+        right: 25.3%; */
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -325,8 +325,8 @@ li {
 .sort {
   background-color: white;
   /* position: absolute;
-      top: 75px;
-      right: 6.1%; */
+        top: 75px;
+        right: 6.1%; */
   padding-left: 10px;
   padding-top: 5px;
   padding-right: 10px;

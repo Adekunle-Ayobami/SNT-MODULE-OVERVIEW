@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SNT Bookings | In Progress</title>
-    <link rel="stylesheet" href="css/bookings-in-progress.css" />
+    <title>SNT Media | Upload New Images</title>
+    <link rel="stylesheet" href="css/upload-new-image.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -62,7 +62,7 @@
             <a href="/~g12dev/CRM128_A/clientm/">Client Data</a>
           </div>
         </div>
-        <div class="side-tab hr selected">
+        <div class="side-tab hr">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
             <a href="/~g12dev/CRM128_A/adm/">Bookings</a>
@@ -96,7 +96,7 @@
             <a href="#"><li>+ New Project</li></a>
           </ul>
         </div>
-        <div class="drop-hr hr" id="hr-toggle4">
+        <div class="drop-hr hr client-bar" id="hr-toggle4">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
             <a href="/~g12dev/CRM128_A/acm/">Media</a>
@@ -110,9 +110,8 @@
         </div>
         <div class="client-dropdown">
           <ul id="hr-items4">
-            <a href="#"><li>Income</li></a>
-            <a href="#"><li>Expenses</li></a>
-            <a href="#"><li>Analytics</li></a>
+            <a href="#"><li>Library</li></a>
+            <a href="#"><li class="selected">Add New</li></a>
           </ul>
         </div>
         <div class="logout">
@@ -121,153 +120,32 @@
           Logout
         </div>
       </div>
-
       <!--  -->
-      <div class="frame-group">
-        <div style="display: flex">
-          <div style="margin-right: 10px">Bookings</div>
-          <div style="margin-right: 10px">|</div>
-          <div style="margin-right: 10px; color: #003e9c; width: 100%">
-            In Progress
-          </div>
-        </div>
-        <div class="button-group">
-          <button class="bt2" id="overlayBtn">Add Bookings</button>
+      <div class="h1">
+        <h1 style="font-size: 24px">Upload New Image</h1>
+        <div class="container">
+          <form action="/upload" method="post" class="upload-form">
+            <img class="icon" src="public/Icon.svg" alt="" />
+            <div>
+              Browse and choose the files you want to upload from your computer
+            </div>
+            <button type="submit">+</button>
+          </form>
         </div>
       </div>
-      <!--  -->
-      <div class="back-group">
-        <div class="back" onclick="history.back()">
-          <img class="search-icon" alt="" src="./public/arrow-back.svg" />
-          <div class="search">Back</div>
-        </div>
-        <div class="input-group">
-          <div class="input-container">
-            <i class="fas fa-search"></i>
-            <input
-              class="input-field1"
-              type="text"
-              name="search"
-              placeholder="Abbey Kate"
-            />
-          </div>
-          <select class="select" name="">
-            <option value="" selected>Period</option>
-            <option value="">Weekly</option>
-            <option value="">Monthly</option>
-            <option value="">Yealy</option>
-          </select>
-          <select class="select1" name="">
-            <option value="">Car Type</option>
-            <option value="">February</option>
-            <option value="">March</option>
-            <option value="">April</option>
-            <option value="">May</option>
-            <option value="">June</option>
-            <option value="">July</option>
-            <option value="">August</option>
-            <option value="">September</option>
-            <option value="">October</option>
-            <option value="">November</option>
-            <option value="">December</option>
-          </select>
-          <select class="select2" name="">
-            <option value="">Color</option>
-            <option value="">Admin</option>
-            <option value="">User</option>
-          </select>
-          <div class="sort">
-            <img style="width: 15px" src="public/sort-minor.svg" alt="" /><span
-              style="margin-bottom: 7px"
-              >Sort</span
-            >
+      <div class="upload">
+        <div class="inner-upload">
+          <img class="icon1" src="public/Icon1.svg" alt="" />
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div style="margin-top: 10px; display: flex; gap: 70px">
+              <span>Uploading Media</span>
+              <span>81%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar-fill"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Button group -->
-      <div class="button-group1">
-        <button class="btn1">
-          <a href="admin-current-user.html">Pending (5)</a>
-        </button>
-        <button class="btn3">
-          <a href="staff-record-entry.html">In Progress (3)</a>
-        </button>
-        <button class="btn4">Completed (2)</button>
-      </div>
-      <!-- Table -->
-      <table class="table">
-        <tr>
-          <th>Name</th>
-          <th>Plate Number</th>
-          <th>Car Color</th>
-          <th>Engine Number</th>
-          <th>Preferred Service</th>
-          <th>Phone Number</th>
-          <th>Date</th>
-          <th>Options</th>
-        </tr>
-        <tr>
-          <td>Kamson Jill</td>
-          <td>KA44 TYS</td>
-          <td>Green</td>
-          <td>52VWC10038</td>
-          <td>Interior Customization</td>
-          <td>0233391890</td>
-          <td>11/06/2023</td>
-          <td><img src="public/more.svg" alt="" /></td>
-        </tr>
-        <tr>
-          <td>Lily Sam</td>
-          <td>KSA8 IFF</td>
-          <td>Yellow</td>
-          <td>52VWC10038</td>
-          <td>Car painting</td>
-          <td>0233390023</td>
-          <td>06/06/2023</td>
-          <td><img src="public/more.svg" alt="" /></td>
-        </tr>
-        <tr>
-          <td>Ojo Wale</td>
-          <td>VX51 DDL</td>
-          <td>Black</td>
-          <td>52VWC10038</td>
-          <td>Car painting</td>
-          <td>0233399997</td>
-          <td>02/06/2023</td>
-          <td><img src="public/more.svg" alt="" /></td>
-        </tr>
-      </table>
-
-      <!--  -->
-      <div class="pagination">
-        <img class="page-disabled" alt="" src="./public/page--disabled.svg" />
-
-        <div class="page-active">
-          <div class="page-active1">
-            <b class="num">1</b>
-          </div>
-        </div>
-        <div class="page-disabled">
-          <div class="page-default1">
-            <b class="num">2</b>
-          </div>
-        </div>
-        <div class="page-disabled">
-          <div class="page-default1">
-            <b class="num">...</b>
-          </div>
-        </div>
-        <div class="page-disabled">
-          <div class="page-default1">
-            <b class="num">9</b>
-          </div>
-        </div>
-        <div class="page-disabled">
-          <div class="page-default1">
-            <b class="num">10</b>
-          </div>
-        </div>
-        <img class="page-master" alt="" src="./public/page--master.svg" />
       </div>
     </section>
     <footer>
