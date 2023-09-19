@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNT Bookings | In Progress</title>
+    <link rel="stylesheet" href="css/bookings-in-progress.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <button class="toggle-button" id="sidebar-toggle">
+          <i class="fa-solid fa-bars bar"></i>
+        </button>
+
+        <div class="crm128-wrapper">
+          <img src="public/SNT.svg" alt="" />
+        </div>
+        <div class="input-container1">
+          <i class="fas fa-search"></i>
+          <input
+            class="input-field12"
+            type="text"
+            name="search"
+            placeholder="Search"
+          />
+        </div>
+        <div class="bell">
+          <img class="vector-icon" alt="" src="./public/Vector3.svg" /><sup
+            ><b class="b">2</b></sup
+          >
+        </div>
+        <div class="ellipse-group">
+          <div class="jg">KS</div>
+          <div class="josiah-gana-parent">
+            <div class="josiah-gana">Kin Singh</div>
+            <div class="admin">Admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <div class="menu">
+        <div class="side-tab">
+          <img class="more-icon" alt="" src="./public/dashboard.svg" />
+          <div class="side-bar"><a href="/~g12dev/CRM128_A/">Overview</a></div>
+        </div>
+        <div class="client-data">
+          <img class="more-icon" alt="" src="./public/dashboard.svg" />
+          <div class="side-bar">
+            <a href="/~g12dev/CRM128_A/clientm/">Client Data</a>
+          </div>
+        </div>
+        <div class="side-tab hr selected">
+          <img class="more-icon" alt="" src="./public/projects-icon.svg" />
+          <div class="side-bar">
+            <a href="/~g12dev/CRM128_A/adm/">Bookings</a>
+          </div>
+        </div>
+        <div class="drop-hr" id="hr-toggle1">
+          <img class="more-icon" alt="" src="./public/projects-icon.svg" />
+          <div class="side-bar">
+            <a href="/~g12dev/CRM128_A/projectm/">Pages</a>
+          </div>
+          <img
+            class="more-icon client-icon"
+            id="hr-chevron-icon1"
+            alt=""
+            src="./public/chevron-down1.svg"
+          />
+        </div>
+        <div class="client-dropdown">
+          <ul id="hr-items1">
+            <!--<a href="index.html"><li>Overview</li></a>-->
+            <a href="#"
+              ><li style="text-overflow: ellipsis">
+                Emzor Pham Industries Ltd.
+              </li></a
+            >
+            <a href="atlantic-hall-school-page.html"
+              ><li>Atlantic Hall School</li></a
+            >
+            <a href="#"><li>Apple</li></a>
+            <a href="#"><li>McDonald's</li></a>
+            <a href="#"><li>+ New Project</li></a>
+          </ul>
+        </div>
+        <div class="drop-hr hr" id="hr-toggle4">
+          <img class="more-icon" alt="" src="./public/projects-icon.svg" />
+          <div class="side-bar">
+            <a href="/~g12dev/CRM128_A/acm/">Media</a>
+          </div>
+          <img
+            class="more-icon client-icon"
+            alt=""
+            id="hr-chevron-icon4"
+            src="./public/chevron-down1.svg"
+          />
+        </div>
+        <div class="client-dropdown">
+          <ul id="hr-items4">
+            <a href="#"><li>Income</li></a>
+            <a href="#"><li>Expenses</li></a>
+            <a href="#"><li>Analytics</li></a>
+          </ul>
+        </div>
+        <div class="logout">
+          <img class="more-icon" alt="" src="./public/logout.svg" />
+          <div class="side-bar"></div>
+          Logout
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="frame-group">
+        <div style="display: flex">
+          <div style="margin-right: 10px">Bookings</div>
+          <div style="margin-right: 10px">|</div>
+          <div style="margin-right: 10px; color: #003e9c; width: 100%">
+            In Progress
+          </div>
+        </div>
+        <div class="button-group">
+          <button class="bt2" id="overlayBtn">Add Client</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="back-group">
+        <div class="input-group">
+          <div class="input-container">
+            <i class="fas fa-search"></i>
+            <input
+              class="input-field1"
+              type="text"
+              name="search"
+              placeholder="Abby Kate"
+            />
+          </div>
+          <select class="select" name="">
+            <option value="" selected>Period</option>
+            <option value="">Weekly</option>
+            <option value="">Monthly</option>
+            <option value="">Yealy</option>
+          </select>
+          <select class="select1" name="">
+            <option value="">Car Type</option>
+            <option value="">February</option>
+            <option value="">March</option>
+            <option value="">April</option>
+            <option value="">May</option>
+            <option value="">June</option>
+            <option value="">July</option>
+            <option value="">August</option>
+            <option value="">September</option>
+            <option value="">October</option>
+            <option value="">November</option>
+            <option value="">December</option>
+          </select>
+          <select class="select2" name="">
+            <option value="">Color</option>
+            <option value="">Admin</option>
+            <option value="">User</option>
+          </select>
+          <div class="sort">
+            <img style="width: 15px" src="public/sort_minor.png" alt="" /><span
+              style="margin-bottom: 7px"
+              >Sort</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="button-family">
+        <button>Pending(6)</button>
+        <button>In Progress(3)</button>
+        <button>Completed(2)</button>
+      </div>
+    </section>
+    <footer>
+      <div class="copyright-2023-crm128-parent">
+        <div class="copyright-2023-crm128-container">
+          <span style="color: #003e9c">© Copyright 2023 CRM</span>
+          <span style="color: #57bc4a">128</span>
+        </div>
+        <div style="color: #003e9c">196 High RoadWood GreenLondon N22 8HH</div>
+      </div>
+    </footer>
+
+    <script>
+      const hrToggle1 = document.getElementById("hr-toggle1");
+      const hrItems1 = document.getElementById("hr-items1");
+      const hrChevronIcon1 = document.getElementById("hr-chevron-icon1");
+
+      hrItems1.classList.add("hidden");
+      hrToggle1.addEventListener("click", function () {
+        hrItems1.classList.toggle("hidden");
+        hrChevronIcon1.classList.toggle("rotate");
+      });
+
+      const hrToggle4 = document.getElementById("hr-toggle4");
+      const hrItems4 = document.getElementById("hr-items4");
+      const hrChevronIcon4 = document.getElementById("hr-chevron-icon4");
+
+      hrItems4.classList.add("hidden");
+      hrToggle4.addEventListener("click", function () {
+        hrItems4.classList.toggle("hidden");
+        hrChevronIcon4.classList.toggle("rotate");
+      });
+
+      document
+        .getElementById("overlayBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "block";
+        });
+      document
+        .getElementById("closeBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "none";
+        });
+
+      // Function to toggle the menu-active class
+      function toggleMenu() {
+        var menu = document.querySelector(".menu");
+        menu.classList.toggle("menu-active");
+      }
+
+      // Add an event listener for button click
+      var sidebarToggle = document.getElementById("sidebar-toggle");
+      sidebarToggle.addEventListener("click", function () {
+        toggleMenu();
+      });
+    </script>
+  </body>
+</html>
