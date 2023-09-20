@@ -146,7 +146,7 @@ li {
 .section {
   position: relative;
 }
-.copyright-2023-crm128-parent {
+/* .copyright-2023-crm128-parent {
   display: flex;
   padding: 10px;
   position: fixed;
@@ -154,7 +154,7 @@ li {
   justify-content: space-around;
   background-color: #d9d9d9;
   width: 100%;
-}
+} */
 .nav-bar .toggle-button {
   background: none;
   border: none;
@@ -163,7 +163,7 @@ li {
   display: none;
 }
 .logout {
-  padding-bottom: 200px;
+  padding-bottom: 228px;
 }
 /*  */
 .frame-group {
@@ -204,6 +204,7 @@ li {
   padding: 10px 20px 10px 30px;
   border-right: 0.3px solid lightblue;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn3 {
   margin-right: -3px;
@@ -211,11 +212,13 @@ li {
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn4 {
   border: none;
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
+  cursor: pointer;
 }
 .btn1:hover {
   background-color: #e6f0ff;
@@ -422,4 +425,74 @@ td {
   left: 4px;
   line-height: 20px;
   display: inline-block;
+}
+/* Overlay Page */
+.add-lead {
+  position: fixed;
+  top: 0;
+  right: -19px;
+  background-color: #f6f6f6;
+  width: 36.8%;
+  height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  font-size: 28px;
+  color: #091e42;
+  font-family: "Clash Grotesk";
+  padding-top: 10px;
+  padding-bottom: 20px;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+.add-lead span {
+  font-size: 20px;
+}
+.lead {
+  display: flex;
+  width: 93%;
+  background-color: #a5a5a5;
+  padding: 20.6px;
+  margin-top: -10px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.label-div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 10px;
+}
+.form label {
+  font-size: 20px;
+}
+.form input {
+  padding: 9px 25px;
+  border: 1px solid #7a8699;
+  border-radius: 8.46px;
+}
+.form select {
+  padding: 9px 25px;
+  border: 1px solid #7a8699;
+  border-radius: 8.46px;
+  outline: none;
+}
+
+.bigbutton {
+  margin-left: 150px;
+  padding: 20px 70px 10px 70px;
+  background-color: #a5a5a5;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-bottom: 20px;
 }

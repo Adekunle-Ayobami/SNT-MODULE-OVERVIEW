@@ -54,24 +54,24 @@
       <div class="menu">
         <div class="side-tab">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
-          <div class="side-bar"><a href="/~g12dev/CRM128_A/">Overview</a></div>
+          <div class="side-bar"><a href="index.html">Overview</a></div>
         </div>
         <div class="client-data selected">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/clientm/">Client Data</a>
+            <a href="client-data.html">Client Data</a>
           </div>
         </div>
         <div class="side-tab hr">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/adm/">Bookings</a>
+            <a href="bookings-pending.html">Bookings</a>
           </div>
         </div>
         <div class="drop-hr" id="hr-toggle1">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/projectm/">Pages</a>
+            <a href="all-pages.html">Pages</a>
           </div>
           <img
             class="more-icon client-icon"
@@ -82,24 +82,14 @@
         </div>
         <div class="client-dropdown">
           <ul id="hr-items1">
-            <!--<a href="index.html"><li>Overview</li></a>-->
-            <a href="#"
-              ><li style="text-overflow: ellipsis">
-                Emzor Pham Industries Ltd.
-              </li></a
-            >
-            <a href="atlantic-hall-school-page.html"
-              ><li>Atlantic Hall School</li></a
-            >
-            <a href="#"><li>Apple</li></a>
-            <a href="#"><li>McDonald's</li></a>
-            <a href="#"><li>+ New Project</li></a>
+            <a href="#"><li>All Pages</li></a>
+            <a href="#"><li>Add New</li></a>
           </ul>
         </div>
         <div class="drop-hr hr" id="hr-toggle4">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/acm/">Media</a>
+            <a href="media-images.html">Media</a>
           </div>
           <img
             class="more-icon client-icon"
@@ -110,9 +100,8 @@
         </div>
         <div class="client-dropdown">
           <ul id="hr-items4">
-            <a href="#"><li>Income</li></a>
-            <a href="#"><li>Expenses</li></a>
-            <a href="#"><li>Analytics</li></a>
+            <a href="#"><li>Library</li></a>
+            <a href="#"><li>Add New</li></a>
           </ul>
         </div>
         <div class="logout">
@@ -145,29 +134,24 @@
             />
           </div>
           <select class="select" name="">
-            <option value="">Period</option>
+            <option value="" selected>Period</option>
             <option value="">Weekly</option>
-            <option value="" selected>Monthly</option>
+            <option value="">Monthly</option>
             <option value="">Yealy</option>
           </select>
           <select class="select1" name="">
             <option value="">Car Type</option>
-            <option value="">February</option>
-            <option value="">March</option>
-            <option value="">April</option>
-            <option value="">May</option>
-            <option value="">June</option>
-            <option value="">July</option>
-            <option value="">August</option>
-            <option value="">September</option>
-            <option value="">October</option>
-            <option value="">November</option>
-            <option value="">December</option>
+            <option value="">Electric Car</option>
+            <option value="">SUV</option>
+            <option value="">Family Car</option>
           </select>
           <select class="select2" name="">
             <option value="">Color</option>
-            <option value="">Admin</option>
-            <option value="">User</option>
+            <option value="">Red</option>
+            <option value="">Blue</option>
+            <option value="">Green</option>
+            <option value="">Yellow</option>
+            <option value="">Black</option>
           </select>
           <div class="sort">
             <img style="width: 15px" src="public/sort_minor.png" alt="" /><span
@@ -190,13 +174,33 @@
           <th>Options</th>
         </tr>
         <tr>
-          <td>Abby Kate</td>
-          <td>LLI9 VBX</td>
-          <td>52VWC10038</td>
-          <td>Red</td>
-          <td>abbykate.mail</td>
-          <td>0233394847</td>
-          <td><img src="public/more.svg" alt="" /></td>
+          <td><a href="client-view.html">Abby Kate</a></td>
+          <td><a href="client-view.html">LLI9 VBX</a></td>
+          <td><a href="client-view.html">52VWC10038</a></td>
+          <td><a href="client-view.html">Red</a></td>
+          <td><a href="client-view.html">abbykate.mail</a></td>
+          <td><a href="client-view.html">0233394847</a></td>
+          <td>
+            <img
+              id="more"
+              src="public/more.svg"
+              alt=""
+            /><!-- Button Overlay -->
+            <div class="button-overlay" id="button-overlay">
+              <button class="btn1" type="submit">
+                <img class="ic" src="public/Edit.svg" alt="" /><a
+                  href="index.html"
+                  >Edit</a
+                >
+              </button>
+              <button class="btn2" type="submit">
+                <img class="ic" src="public/Open eyes.svg" alt="" />View
+              </button>
+              <button class="btn3" type="submit">
+                <img class="ic" src="public/Delete.svg" alt="" />Delete
+              </button>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Abby Kate</td>
@@ -236,6 +240,19 @@
         </tr>
       </table>
 
+      <!-- Button Overlay -->
+      <!-- <div class="button-overlay" id="button-overlay">
+        <button class="btn1" type="submit">
+          <img class="ic" src="public/Edit.svg" alt="" />Edit
+        </button>
+        <button type="submit">
+          <img class="ic" src="public/Open eyes.svg" alt="" />View
+        </button>
+        <button class="btn2" type="submit">
+          <img class="ic" src="public/Delete.svg" alt="" />Delete
+        </button>
+      </div> -->
+
       <!--  -->
       <div class="pagination">
         <img class="page-disabled" alt="" src="./public/page--disabled.svg" />
@@ -268,7 +285,7 @@
         <img class="page-master" alt="" src="./public/page--master.svg" />
       </div>
     </section>
-    <footer>
+    <!-- <footer>
       <div class="copyright-2023-crm128-parent">
         <div class="copyright-2023-crm128-container">
           <span style="color: #003e9c">© Copyright 2023 CRM</span>
@@ -276,7 +293,90 @@
         </div>
         <div style="color: #003e9c">196 High RoadWood GreenLondon N22 8HH</div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Overlay Pages -->
+    <div class="add-lead" id="overlay" style="display: none">
+      <div class="lead">
+        <div style="width: 100%; font-weight: 600">Add New Client</div>
+        <img src="public/close.svg" id="closeBtn" alt="" />
+      </div>
+      <form class="form">
+        <div class="form-div">
+          <div class="label-div">
+            <label for="">First Name*</label>
+            <input type="text" placeholder="Lilly" />
+          </div>
+          <div class="label-div">
+            <label for="">Email</label>
+            <input type="text" placeholder="lillysam.mail" />
+          </div>
+          <div class="label-div">
+            <label for="">Plate Number</label>
+            <input type="text" placeholder="KSA8 IFF" />
+          </div>
+          <div class="label-div">
+            <label for="">Car Type</label>
+            <select name="">
+              <option value="">Select</option>
+              <option value="">Electric Car</option>
+              <option value="">SUV</option>
+              <option value="">Family Car</option>
+            </select>
+          </div>
+          <div class="label-div">
+            <label for="">Engine Number</label>
+            <input type="text" placeholder="52VWC10038" />
+          </div>
+          <div class="label-div">
+            <label for="">Location</label>
+            <select name="">
+              <option value="">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-div">
+          <div class="label-div">
+            <label for="">Last Name*</label>
+            <input type="text" placeholder="Sam" />
+          </div>
+          <div class="label-div">
+            <label for="">Phone</label>
+            <input type="text" placeholder="0233394847" />
+          </div>
+          <div class="label-div">
+            <label for="">Car Color</label>
+            <select name="">
+              <option value="">Select</option>
+              <option value="">Red</option>
+              <option value="">Blue</option>
+              <option value="">Green</option>
+              <option value="">Yellow</option>
+              <option value="">Black</option>
+            </select>
+          </div>
+          <div class="label-div">
+            <label for="">Chassis Number</label>
+            <input type="text" placeholder="967856" />
+          </div>
+          <div class="label-div">
+            <label for="">Model</label>
+            <input type="text" placeholder="Cs-250" />
+          </div>
+          <div class="label-div">
+            <label for="">Status</label>
+            <select name="">
+              <option value="">Select</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div>
+        <a href="client-company-list.html"
+          ><button class="bigbutton">Save</button></a
+        >
+      </div>
+    </div>
 
     <script>
       const hrToggle1 = document.getElementById("hr-toggle1");
@@ -309,6 +409,18 @@
         .addEventListener("click", function () {
           document.getElementById("overlay").style.display = "none";
         });
+
+      // Button Overlay
+      const overlay = document.getElementById("button-overlay");
+      const openOverlayButton = document.getElementById("more");
+
+      openOverlayButton.addEventListener("click", () => {
+        overlay.style.display = "block";
+      });
+
+      overlay.addEventListener("click", (event) => {
+        overlay.style.display = "none";
+      });
 
       // Function to toggle the menu-active class
       function toggleMenu() {

@@ -151,7 +151,7 @@ li {
 .section {
   position: relative;
 }
-.copyright-2023-crm128-parent {
+/* .copyright-2023-crm128-parent {
   display: flex;
   padding: 10px;
   position: fixed;
@@ -159,7 +159,7 @@ li {
   justify-content: space-around;
   background-color: #d9d9d9;
   width: 100%;
-}
+} */
 .nav-bar .toggle-button {
   background: none;
   border: none;
@@ -170,6 +170,21 @@ li {
 .logout {
   padding-bottom: 480px;
 }
+.back {
+  position: absolute;
+  top: 3.5em;
+  left: 19.9em;
+  border-radius: 7px;
+  background-color: #f5f6f7;
+  border: 1px solid #dfe2e6;
+  padding: 3px 14px;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 /*  */
 .frame-group {
   display: flex;
@@ -177,10 +192,10 @@ li {
   margin-top: 20px;
   margin-left: 20px;
   width: 100%;
-  gap: 700px;
+  gap: 770px;
   position: absolute;
-  top: 15px;
-  left: 320px;
+  top: 10px;
+  left: 300px;
 }
 .button-group {
   display: flex;
@@ -194,11 +209,12 @@ li {
   color: white;
   padding-top: 7px;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 /*  */
 .button-group1 {
   position: absolute;
-  top: 124px;
+  top: 9.6em;
   left: 320px;
 }
 .btn1 {
@@ -208,6 +224,7 @@ li {
   color: #7a8699;
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
+  cursor: pointer;
 }
 .btn3 {
   margin-right: -3px;
@@ -216,12 +233,15 @@ li {
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn4 {
   border: none;
   border-top: 2px solid #091e42;
   background-color: #e6f0ff;
   padding: 10px 20px 10px 30px;
+  color: #7a8699;
+  cursor: pointer;
 }
 .btn1:hover {
   background-color: #e6f0ff;
@@ -245,7 +265,7 @@ li {
 .back-group {
   display: flex;
   position: absolute;
-  top: 5em;
+  top: 6em;
   left: 320px;
   gap: 200px;
 }
@@ -290,7 +310,7 @@ li {
 /* table */
 .table {
   position: absolute;
-  top: 10em;
+  top: 12em;
   left: 20em;
   width: 70%;
   border-collapse: collapse;

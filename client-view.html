@@ -54,24 +54,24 @@
       <div class="menu">
         <div class="side-tab">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
-          <div class="side-bar"><a href="/~g12dev/CRM128_A/">Overview</a></div>
+          <div class="side-bar"><a href="index.html">Overview</a></div>
         </div>
         <div class="client-data selected">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/clientm/">Client Data</a>
+            <a href="client-data.html">Client Data</a>
           </div>
         </div>
-        <div class="side-tab hr">
+        <div class="side-tab">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/adm/">Bookings</a>
+            <a href="bookings-pending.html">Bookings</a>
           </div>
         </div>
         <div class="drop-hr" id="hr-toggle1">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/projectm/">Pages</a>
+            <a href="all-pages.html">Pages</a>
           </div>
           <img
             class="more-icon client-icon"
@@ -82,24 +82,14 @@
         </div>
         <div class="client-dropdown">
           <ul id="hr-items1">
-            <!--<a href="index.html"><li>Overview</li></a>-->
-            <a href="#"
-              ><li style="text-overflow: ellipsis">
-                Emzor Pham Industries Ltd.
-              </li></a
-            >
-            <a href="atlantic-hall-school-page.html"
-              ><li>Atlantic Hall School</li></a
-            >
-            <a href="#"><li>Apple</li></a>
-            <a href="#"><li>McDonald's</li></a>
-            <a href="#"><li>+ New Project</li></a>
+            <a href="#"><li>All Pages</li></a>
+            <a href="#"><li>Add New</li></a>
           </ul>
         </div>
-        <div class="drop-hr hr" id="hr-toggle4">
+        <div class="drop-hr" id="hr-toggle4">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/acm/">Media</a>
+            <a href="media-images.html">Media</a>
           </div>
           <img
             class="more-icon client-icon"
@@ -110,9 +100,8 @@
         </div>
         <div class="client-dropdown">
           <ul id="hr-items4">
-            <a href="#"><li>Income</li></a>
-            <a href="#"><li>Expenses</li></a>
-            <a href="#"><li>Analytics</li></a>
+            <a href="#"><li>Library</li></a>
+            <a href="#"><li>Add New</li></a>
           </ul>
         </div>
         <div class="logout">
@@ -130,7 +119,7 @@
       <div class="first-inner">
         <div class="lilly">
           <span style="font-weight: 600">LILLY SAM</span>
-          <button>Edit</button>
+          <button type="submit" id="overlayBtn">Edit</button>
         </div>
         <div class="apple-box">
           <img class="apple" src="public/apple--jpeg-0@2x.png" alt="" />
@@ -198,7 +187,7 @@ Enter Description</textarea
         >
       </div>
     </section>
-    <footer>
+    <!-- <footer>
       <div class="copyright-2023-crm128-parent">
         <div class="copyright-2023-crm128-container">
           <span style="color: #003e9c">© Copyright 2023 CRM</span>
@@ -206,7 +195,91 @@ Enter Description</textarea
         </div>
         <div style="color: #003e9c">196 High RoadWood GreenLondon N22 8HH</div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Overlay Pages -->
+    <div class="add-lead" id="overlay">
+      <div class="lead">
+        <div style="width: 100%; font-weight: 600">EDIT BOOKINGS</div>
+        <img src="public/close.svg" id="closeBtn" alt="" />
+      </div>
+      <hr class="hr" />
+      <form class="form">
+        <div class="form-div">
+          <div class="label-div">
+            <label for="">First Name*</label>
+            <input type="text" placeholder="Lilly" />
+          </div>
+          <div class="label-div">
+            <label for="">Email</label>
+            <input type="text" placeholder="lillysam.mail" />
+          </div>
+          <div class="label-div">
+            <label for="">Plate Number</label>
+            <input type="text" placeholder="KSA8 IFF" />
+          </div>
+          <div class="label-div">
+            <label for="">Car Type</label>
+            <select name="">
+              <option value="">Select</option>
+              <option value="">Electric Car</option>
+              <option value="">SUV</option>
+              <option value="">Family Car</option>
+            </select>
+          </div>
+          <div class="label-div">
+            <label for="">Engine Number</label>
+            <input type="text" placeholder="52VWC10038" />
+          </div>
+          <div class="label-div">
+            <label for="">Location</label>
+            <select name="">
+              <option value="">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-div">
+          <div class="label-div">
+            <label for="">Last Name*</label>
+            <input type="text" placeholder="Sam" />
+          </div>
+          <div class="label-div">
+            <label for="">Phone</label>
+            <input type="text" placeholder="0233394847" />
+          </div>
+          <div class="label-div">
+            <label for="">Car Color</label>
+            <select name="">
+              <option value="">Select</option>
+              <option value="">Red</option>
+              <option value="">Blue</option>
+              <option value="">Green</option>
+              <option value="">Yellow</option>
+              <option value="">Black</option>
+            </select>
+          </div>
+          <div class="label-div">
+            <label for="">Chassis Number</label>
+            <input type="text" placeholder="967856" />
+          </div>
+          <div class="label-div">
+            <label for="">Model</label>
+            <input type="text" placeholder="Cs-250" />
+          </div>
+          <div class="label-div">
+            <label for="">Status</label>
+            <select name="">
+              <option value="">Select</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div>
+        <a href="client-company-list.html"
+          ><button class="bigbutton">UPDATE</button></a
+        >
+      </div>
+    </div>
 
     <script>
       const hrToggle1 = document.getElementById("hr-toggle1");

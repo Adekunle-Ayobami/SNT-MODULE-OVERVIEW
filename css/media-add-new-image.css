@@ -168,7 +168,7 @@ li {
   display: none;
 }
 .logout {
-  padding-bottom: 200px;
+  padding-bottom: 228px;
 }
 .back {
   position: absolute;
@@ -183,6 +183,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 /*  */
 .container {

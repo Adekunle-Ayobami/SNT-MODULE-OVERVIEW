@@ -54,24 +54,24 @@
       <div class="menu">
         <div class="side-tab">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
-          <div class="side-bar"><a href="/~g12dev/CRM128_A/">Overview</a></div>
+          <div class="side-bar"><a href="index.html">Overview</a></div>
         </div>
         <div class="client-data">
           <img class="more-icon" alt="" src="./public/dashboard.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/clientm/">Client Data</a>
+            <a href="client-data.html">Client Data</a>
           </div>
         </div>
         <div class="side-tab hr">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/adm/">Bookings</a>
+            <a href="bookings-pending.html">Bookings</a>
           </div>
         </div>
         <div class="drop-hr client-bar" id="hr-toggle1">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/projectm/">Pages</a>
+            <a href="all-pages.html">Pages</a>
           </div>
           <img
             class="more-icon client-icon"
@@ -89,7 +89,7 @@
         <div class="drop-hr hr" id="hr-toggle4">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
-            <a href="/~g12dev/CRM128_A/acm/">Media</a>
+            <a href="media-images.html">Media</a>
           </div>
           <img
             class="more-icon client-icon"
@@ -100,9 +100,8 @@
         </div>
         <div class="client-dropdown">
           <ul id="hr-items4">
-            <a href="#"><li>Income</li></a>
-            <a href="#"><li>Expenses</li></a>
-            <a href="#"><li>Analytics</li></a>
+            <a href="#"><li>Library</li></a>
+            <a href="#"><li>Add New</li></a>
           </ul>
         </div>
         <div class="logout">
@@ -121,9 +120,10 @@
             All Pages
           </div>
         </div>
-        <div class="button-group">
-          <button class="bt2" id="overlayBtn">Add Bookings</button>
-        </div>
+      </div>
+      <div class="back" onclick="history.back()">
+        <img class="search-icon" alt="" src="./public/arrow-back.svg" />
+        <div class="search">Back</div>
       </div>
       <!--  -->
       <div class="back-group">
@@ -161,12 +161,12 @@
       </div>
       <!-- Button group -->
       <div class="button-group1">
-        <button class="btn1">
-          <a href="admin-current-user.html">All (5)</a>
-        </button>
-        <button class="btn3">
-          <a href="staff-record-entry.html">Published (3)</a>
-        </button>
+        <a href="all-pages.html">
+          <button class="btn1">All (5)</button>
+        </a>
+        <a href="published-pages.html">
+          <button class="btn3">Published (3)</button>
+        </a>
         <button class="btn4">Drafts (1)</button>
       </div>
       <!-- Table -->
@@ -181,7 +181,13 @@
           <td><input type="checkbox" /></td>
           <td>
             Careers - Draft <br /><br />
-            <span>Edit | <span style="color: #be0606">Trash</span> | View</span>
+            <span
+              ><a href="pages-edit.html">Edit</a> |
+              <span
+                ><a style="color: #be0606" href="grid-view.html">Trash</a></span
+              >
+              | <a href="preview-page.html">View</a></span
+            >
           </td>
           <td>Admin</td>
           <td>
@@ -193,7 +199,13 @@
           <td><input type="checkbox" /></td>
           <td>
             Blog - Draft<br /><br />
-            <span>Edit | <span style="color: #be0606">Trash</span> | View</span>
+            <span
+              ><a href="pages-edit.html">Edit</a> |
+              <span
+                ><a style="color: #be0606" href="grid-view.html">Trash</a></span
+              >
+              | <a href="preview-page.html">View</a></span
+            >
           </td>
           <td>Admin</td>
           <td>

@@ -146,7 +146,7 @@ li {
 .section {
   position: relative;
 }
-.copyright-2023-crm128-parent {
+/* .copyright-2023-crm128-parent {
   display: flex;
   padding: 10px;
   position: fixed;
@@ -154,7 +154,7 @@ li {
   justify-content: space-around;
   background-color: #d9d9d9;
   width: 100%;
-}
+} */
 .nav-bar .toggle-button {
   background: none;
   border: none;
@@ -163,7 +163,7 @@ li {
   display: none;
 }
 .logout {
-  padding-bottom: 220px;
+  padding-bottom: 230px;
 }
 .hr {
   border-bottom: 1px solid #8f8f8f;
@@ -245,6 +245,7 @@ li {
   border: 1px solid lightblue;
   padding: 5px 18px;
   width: 20%;
+  cursor: pointer;
 }
 .table {
   position: relative;

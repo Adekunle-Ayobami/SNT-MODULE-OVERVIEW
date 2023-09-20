@@ -151,7 +151,7 @@ li {
 .section {
   position: relative;
 }
-.copyright-2023-crm128-parent {
+/* .copyright-2023-crm128-parent {
   display: flex;
   padding: 10px;
   position: fixed;
@@ -159,7 +159,7 @@ li {
   justify-content: space-around;
   background-color: #d9d9d9;
   width: 100%;
-}
+} */
 .nav-bar .toggle-button {
   background: none;
   border: none;
@@ -170,6 +170,21 @@ li {
 .logout {
   padding-bottom: 480px;
 }
+.back {
+  position: absolute;
+  top: 3.5em;
+  left: 19.9em;
+  border-radius: 7px;
+  background-color: #f5f6f7;
+  border: 1px solid #dfe2e6;
+  padding: 3px 14px;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 /*  */
 .frame-group {
   display: flex;
@@ -179,8 +194,8 @@ li {
   width: 100%;
   gap: 700px;
   position: absolute;
-  top: 15px;
-  left: 320px;
+  top: 10px;
+  left: 19.1em;
 }
 .button-group {
   display: flex;
@@ -194,11 +209,12 @@ li {
   color: white;
   padding-top: 7px;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 /*  */
 .button-group1 {
   position: absolute;
-  top: 124px;
+  top: 9em;
   left: 320px;
 }
 .btn1 {
@@ -206,7 +222,9 @@ li {
   border: none;
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
+  border-right: 0.3px solid lightblue;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn3 {
   margin-right: -3px;
@@ -216,11 +234,14 @@ li {
   padding: 10px 20px 10px 30px;
   border-right: 0.3px solid lightblue;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn4 {
   border: none;
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
+  color: #7a8699;
+  cursor: pointer;
 }
 .btn1:hover {
   background-color: #e6f0ff;
@@ -244,7 +265,7 @@ li {
 .back-group {
   display: flex;
   position: absolute;
-  top: 5em;
+  top: 6em;
   left: 320px;
   gap: 200px;
 }
@@ -289,7 +310,7 @@ li {
 /* table */
 .table {
   position: absolute;
-  top: 10em;
+  top: 11.3em;
   left: 20em;
   width: 70%;
   border-collapse: collapse;
@@ -303,7 +324,7 @@ th {
   padding: 10px;
 }
 td {
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 120px 10px;
 }
 tr:nth-child(even) {
   background-color: #ebedf0;

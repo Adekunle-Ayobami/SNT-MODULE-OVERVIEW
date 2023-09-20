@@ -151,7 +151,7 @@ li {
 .section {
   position: relative;
 }
-.copyright-2023-crm128-parent {
+/* .copyright-2023-crm128-parent {
   display: flex;
   padding: 10px;
   position: fixed;
@@ -159,7 +159,7 @@ li {
   justify-content: space-around;
   background-color: #d9d9d9;
   width: 100%;
-}
+} */
 .nav-bar .toggle-button {
   background: none;
   border: none;
@@ -177,10 +177,10 @@ li {
   margin-top: 20px;
   margin-left: 20px;
   width: 100%;
-  gap: 700px;
+  gap: 770px;
   position: absolute;
   top: 15px;
-  left: 320px;
+  left: 300px;
 }
 .button-group {
   display: flex;
@@ -209,6 +209,7 @@ li {
   padding: 10px 20px 10px 30px;
   border-right: 0.3px solid lightblue;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn3 {
   margin-right: -3px;
@@ -216,11 +217,14 @@ li {
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
   color: #7a8699;
+  cursor: pointer;
 }
 .btn4 {
   border: none;
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  color: #7a8699;
 }
 .btn1:hover {
   background-color: #e6f0ff;
