@@ -378,6 +378,10 @@ td {
   padding: 20.6px;
   margin-top: -10px;
 }
+.add-new {
+  width: 100%;
+  font-weight: 600;
+}
 .form {
   display: flex;
   justify-content: center;
@@ -525,4 +529,77 @@ td {
 }
 .ic {
   width: 20px;
+}
+
+@media (max-width: 500px) {
+  .bell {
+    display: none;
+  }
+  .input-container1 {
+    display: none;
+  }
+  body {
+    width: 400px;
+    height: 700px;
+  }
+  .nav-bar {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    display: none;
+    margin-top: -10px;
+    height: 1100px;
+    z-index: 10;
+  }
+  .menu.menu-active {
+    display: block;
+  }
+
+  .nav-bar .toggle-button {
+    display: block;
+    margin-left: -25px;
+  }
+  .frame-group {
+    left: 1em;
+    gap: 213px;
+    width: 100px;
+  }
+  .back-group {
+    width: 30px;
+  }
+  .input-group {
+    left: -16em;
+  }
+  .input-container {
+    display: none;
+  }
+  .table {
+    top: 24em;
+    left: 1em;
+    font-size: 7px;
+    width: 1px;
+  }
+  th {
+    padding: 2px;
+  }
+  .pagination {
+    top: 40em;
+    left: 5em;
+  }
+  .add-lead {
+    width: 100%;
+  }
+  .add-new {
+    width: 85%;
+  }
+  .form {
+    position: relative;
+    left: 1em;
+    gap: 1px;
+  }
+  .form-div1 {
+    position: relative;
+    left: -1em;
+  }
 }

@@ -151,7 +151,7 @@ li {
 .section {
   position: relative;
 }
-.copyright-2023-crm128-parent {
+/* .copyright-2023-crm128-parent {
   display: flex;
   padding: 10px;
   position: fixed;
@@ -159,7 +159,7 @@ li {
   justify-content: space-around;
   background-color: #d9d9d9;
   width: 100%;
-}
+} */
 .nav-bar .toggle-button {
   background: none;
   border: none;
@@ -168,7 +168,7 @@ li {
   display: none;
 }
 .logout {
-  padding-bottom: 200px;
+  padding-bottom: 228px;
 }
 /*  */
 .container {

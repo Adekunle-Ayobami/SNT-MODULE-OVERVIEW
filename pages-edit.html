@@ -62,7 +62,7 @@
             <a href="client-data.html">Client Data</a>
           </div>
         </div>
-        <div class="side-tab hr">
+        <div class="side-tab">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
             <a href="bookings-pending.html">Bookings</a>
@@ -86,7 +86,7 @@
             <a href="#"><li>Add New</li></a>
           </ul>
         </div>
-        <div class="drop-hr hr" id="hr-toggle4">
+        <div class="drop-hr" id="hr-toggle4">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
             <a href="media-images.html">Media</a>
@@ -252,7 +252,48 @@
           <button type="submit">+</button>
         </div>
       </div>
-      <select name="" id=""></select>
+      <form class="form" action="">
+        <div class="inner-form">
+          <label for="">Image Size</label>
+          <select name="">
+            <option value="">Select</option>
+            <option value="">Small</option>
+            <option value="">Medium</option>
+            <option value="">Large</option>
+          </select>
+        </div>
+        <div class="inner-form1">
+          <div style="font-size: 18px; font-weight: 600">Image Dimension</div>
+          <div style="display: flex; gap: 20px">
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <label for="">Width</label>
+              <input type="text" placeholder="1024" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <label for="">Height</label>
+              <input type="text" placeholder="1024" />
+            </div>
+          </div>
+        </div>
+        <div class="btn-grp">
+          <div>
+            <button class="b1" type="submit">25%</button>
+            <button class="b2" type="submit">50%</button>
+            <button class="b3" type="submit">75%</button>
+            <button class="b4" type="submit">100%</button>
+          </div>
+          <div style="font-size: 19px">Reset</div>
+        </div>
+        <div class="inner-form">
+          <label for="">Alignment</label>
+          <select name="">
+            <option value="">Select</option>
+            <option value="">Small</option>
+            <option value="">Medium</option>
+            <option value="">Large</option>
+          </select>
+        </div>
+      </form>
     </div>
 
     <script>

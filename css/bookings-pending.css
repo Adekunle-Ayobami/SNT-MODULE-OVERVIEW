@@ -496,3 +496,63 @@ td {
   border-radius: 5px;
   padding-bottom: 20px;
 }
+
+@media (max-width: 500px) {
+  .bell {
+    display: none;
+  }
+  .input-container1 {
+    display: none;
+  }
+  body {
+    width: 400px;
+    height: 1400px;
+  }
+  .nav-bar {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    display: none;
+    margin-top: -10px;
+    height: 1300px;
+    z-index: 10;
+  }
+  .menu.menu-active {
+    display: block;
+  }
+
+  .nav-bar .toggle-button {
+    display: block;
+    margin-left: -25px;
+  }
+  .frame-group {
+    left: 1em;
+    gap: 100px;
+    width: 100px;
+  }
+  .back-group {
+    left: 1em;
+    gap: 1px;
+  }
+  .input-container {
+    display: none;
+  }
+  .table {
+    top: 13em;
+    left: 1em;
+    font-size: 10px;
+  }
+  .back {
+    position: relative;
+    top: -10em;
+  }
+  .button-group1 {
+    top: 10.6em;
+    left: 1em;
+  }
+  .pagination {
+    top: 45em;
+    left: 6em;
+  }
+}

@@ -62,7 +62,7 @@
             <a href="client-data.html">Client Data</a>
           </div>
         </div>
-        <div class="side-tab hr">
+        <div class="side-tab">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
             <a href="bookings-pending.html">Bookings</a>
@@ -86,7 +86,7 @@
             <a href="#"><li>Add New</li></a>
           </ul>
         </div>
-        <div class="drop-hr hr client-bar" id="hr-toggle4">
+        <div class="drop-hr client-bar" id="hr-toggle4">
           <img class="more-icon" alt="" src="./public/projects-icon.svg" />
           <div class="side-bar">
             <a href="media-images.html">Media</a>
@@ -150,7 +150,7 @@
       <!--  -->
       <div class="gallery">
         <div style="display: flex; gap: 10px">
-          <img class="image" src="public/p1.png" alt="" />
+          <img id="overlayBtn" class="image" src="public/p1.png" alt="" />
           <img class="image" src="public/p2.png" alt="" />
           <img class="image" src="public/p3.png" alt="" />
           <img class="image" src="public/p2.png" alt="" />
@@ -178,6 +178,48 @@
         <div style="color: #003e9c">196 High RoadWood GreenLondon N22 8HH</div>
       </div>
     </footer> -->
+
+    <!-- Overlay Pages -->
+    <div class="add-lead" id="overlay">
+      <div class="lead">
+        <div style="width: 100%; font-weight: 600">View Image</div>
+        <img src="public/close.svg" id="closeBtn" alt="" />
+      </div>
+      <div class="p1-fam">
+        <img class="p1" src="public/p1.png" alt="" />
+        <table class="table">
+          <caption>
+            Information
+          </caption>
+          <tr>
+            <td>title</td>
+            <td>Image - 01</td>
+            <td><img style="width: 20px" src="public/Edit.svg" alt="" /></td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Image - 01</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Image - 01</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Image - 01</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Image - 01</td>
+            <td></td>
+          </tr>
+        </table>
+        <button type="submit">Save</button>
+      </div>
+    </div>
 
     <script>
       const hrToggle1 = document.getElementById("hr-toggle1");

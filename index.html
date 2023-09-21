@@ -148,7 +148,7 @@
             <span style="margin-left: 10px">Pending</span>
             <span class="num">8</span>
           </div>
-          <div class="one">
+          <div class="one one1">
             <img class="grab" src="public/grab.svg" alt="" />
             <img
               class="pending"
@@ -225,17 +225,6 @@
         hrChevronIcon4.classList.toggle("rotate");
       });
 
-      document
-        .getElementById("overlayBtn")
-        .addEventListener("click", function () {
-          document.getElementById("overlay").style.display = "block";
-        });
-      document
-        .getElementById("closeBtn")
-        .addEventListener("click", function () {
-          document.getElementById("overlay").style.display = "none";
-        });
-
       // Function to toggle the menu-active class
       function toggleMenu() {
         var menu = document.querySelector(".menu");
@@ -247,6 +236,17 @@
       sidebarToggle.addEventListener("click", function () {
         toggleMenu();
       });
+
+      document
+        .getElementById("overlayBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "block";
+        });
+      document
+        .getElementById("closeBtn")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "none";
+        });
     </script>
   </body>
 </html>

@@ -238,4 +238,80 @@ li {
 .image {
   width: 242px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Overlay Page */
+.add-lead {
+  position: fixed;
+  top: 0.5em;
+  right: 15em;
+  background-color: white;
+  width: 36.8%;
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  font-size: 28px;
+  color: #091e42;
+  font-family: "Clash Grotesk";
+  padding-top: 10px;
+  padding-bottom: 20px;
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px 450px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.add-lead span {
+  font-size: 20px;
+}
+.lead {
+  display: flex;
+  width: 93%;
+  padding: 20.6px;
+  margin-top: -10px;
+  font-size: 18px;
+}
+.p1-fam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.p1-fam button {
+  border-radius: 4.47px;
+  background-color: #0047b3;
+  padding: 8.935229301452637px 26.805686950683594px;
+  font-size: 16px;
+  color: #e6f0ff;
+  border: none;
+  cursor: pointer;
+}
+.p1 {
+  width: 20vw;
+  border: 1px solid #aeb4b9;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.table {
+  font-size: 21px;
+  width: 70%;
+  border-collapse: collapse;
+}
+.table caption {
+  position: relative;
+  left: -5.8em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  background-color: #f5f6f7;
+}
+tr:nth-child(even) {
+  background-color: #ebedf0;
 }

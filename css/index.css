@@ -163,7 +163,7 @@ li {
   display: none;
 }
 .logout {
-  padding-bottom: 230px;
+  padding-bottom: 228px;
 }
 .hr {
   border-bottom: 1px solid #8f8f8f;
@@ -260,4 +260,83 @@ th {
 td {
   text-align: center;
   padding: 13px;
+}
+
+@media (max-width: 500px) {
+  .bell {
+    display: none;
+  }
+  .input-container {
+    display: none;
+  }
+  body {
+    width: 400px;
+    height: 1400px;
+  }
+  .nav-bar {
+    width: 100%;
+  }
+  .menu {
+    position: relative;
+    display: none;
+    margin-top: -10px;
+    height: 1300px;
+    z-index: 10;
+  }
+  .menu.menu-active {
+    display: block;
+  }
+
+  .nav-bar .toggle-button {
+    display: block;
+    margin-left: -25px;
+  }
+  .box1 {
+    top: 4em;
+    left: 1em;
+    width: 360px;
+    height: 750px;
+    padding: 10px;
+    /* display: none; */
+  }
+  .thead {
+    top: 55em;
+    left: 1em;
+    width: 350px;
+    height: 280px;
+  }
+  .inner-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 2em;
+    gap: 20px;
+  }
+  .inner-boxes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 2.7em;
+    gap: 10px;
+    width: 100px;
+  }
+  .one1 {
+    width: 250px;
+  }
+  .dt {
+    left: -1em;
+  }
+  .heading {
+    gap: 130px;
+  }
+  .table {
+    left: -0.5em;
+  }
+  .josiah-gana-parent {
+    display: none;
+  }
+  .jg {
+    position: relative;
+    left: 1.6em;
+  }
 }
