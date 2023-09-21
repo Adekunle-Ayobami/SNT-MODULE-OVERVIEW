@@ -224,6 +224,7 @@ li {
   padding: 7px 4px;
   font-size: 13px;
   color: #0047b3;
+  cursor: pointer;
 }
 /*  */
 .gallery {

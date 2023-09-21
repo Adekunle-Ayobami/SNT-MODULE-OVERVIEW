@@ -189,6 +189,7 @@ li {
   color: white;
   padding-top: 7px;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .back-group {
   display: flex;
@@ -426,14 +427,87 @@ td {
   display: flex;
   flex-direction: column;
   gap: 1px;
-  /* display: none; */
+  display: none;
 }
+.button-overlay2 {
+  position: absolute;
+  top: 8em;
+  left: 52em;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  display: none;
+}
+.button-overlay3 {
+  position: absolute;
+  top: 11.8em;
+  left: 52em;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  display: none;
+}
+.button-overlay4 {
+  position: absolute;
+  top: 15em;
+  left: 52em;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  display: none;
+}
+.button-overlay5 {
+  position: absolute;
+  top: 18em;
+  left: 52em;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  display: none;
+}
+
 .btn3 {
   border-radius: 0px 0px 8px 8px;
   background-color: #ffeaea;
   color: #fd5353;
 }
 .button-overlay button {
+  padding: 5px 19px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button-overlay2 button {
+  padding: 5px 19px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button-overlay3 button {
+  padding: 5px 19px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button-overlay4 button {
+  padding: 5px 19px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button-overlay5 button {
   padding: 5px 19px;
   width: 150px;
   font-size: 16px;

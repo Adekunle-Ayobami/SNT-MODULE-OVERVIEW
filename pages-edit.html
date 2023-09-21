@@ -129,10 +129,11 @@
         <div class="input-group">
           <select name="">
             <option value="">Preview</option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="">Save</option>
           </select>
-          <button type="submit">Publish</button>
+          <a href="published-pages.html">
+            <button type="submit" style="cursor: pointer">Publish</button>
+          </a>
         </div>
       </div>
       <div class="inner-box">
@@ -213,18 +214,18 @@
           maintenance, and customization solutions to meet all your automotive
           needs.
         </p>
-        <div class="container">
-          <form action="/upload" method="post" class="upload-form">
+        <div class="container" id="overlayBtn">
+          <div class="upload-form">
             <img class="icon" src="public/Icon.svg" alt="" />
             <div>
               Browse and choose the files you want to upload from your computer
             </div>
-            <button type="submit">+</button>
-          </form>
+            <button type="submit" id="overlayBtn">+</button>
+          </div>
         </div>
       </div>
     </section>
-    <footer>
+    <!-- <footer>
       <div class="copyright-2023-crm128-parent">
         <div class="copyright-2023-crm128-container">
           <span style="color: #003e9c">© Copyright 2023 CRM</span>
@@ -232,7 +233,27 @@
         </div>
         <div style="color: #003e9c">196 High RoadWood GreenLondon N22 8HH</div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Overlay Pages -->
+    <div class="add-lead" id="overlay">
+      <div class="lead">
+        <div style="width: 100%; font-weight: 600">Add Image</div>
+        <img src="public/close.svg" id="closeBtn" alt="" />
+      </div>
+      <hr class="hr" />
+      <div class="upload">Upload Image</div>
+      <div class="container1">
+        <div class="upload-form1">
+          <img class="icon" src="public/Icon.svg" alt="" />
+          <div style="font-size: 15px">
+            Choose the files you want to upload from your media library
+          </div>
+          <button type="submit">+</button>
+        </div>
+      </div>
+      <select name="" id=""></select>
+    </div>
 
     <script>
       const hrToggle1 = document.getElementById("hr-toggle1");

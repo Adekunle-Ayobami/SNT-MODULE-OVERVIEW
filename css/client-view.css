@@ -179,6 +179,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 .first-inner {
   background-color: white;
@@ -262,7 +263,7 @@ li {
   padding-bottom: 20px;
   z-index: 1;
   border-radius: 8px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px 450px rgba(0, 0, 0, 0.2);
   display: none;
 }
 .add-lead span {

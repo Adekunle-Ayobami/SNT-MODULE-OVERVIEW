@@ -209,7 +209,27 @@
           <td>Blue</td>
           <td>abbykate.mail</td>
           <td>0233395234</td>
-          <td><img src="public/more.svg" alt="" /></td>
+          <td>
+            <img
+              id="more2"
+              src="public/more.svg"
+              alt=""
+            /><!-- Button Overlay2 -->
+            <div class="button-overlay2" id="button-overlay2">
+              <button class="btn1" type="submit">
+                <img class="ic" src="public/Edit.svg" alt="" /><a
+                  href="index.html"
+                  >Edit</a
+                >
+              </button>
+              <button class="btn2" type="submit">
+                <img class="ic" src="public/Open eyes.svg" alt="" />View
+              </button>
+              <button class="btn3" type="submit">
+                <img class="ic" src="public/Delete.svg" alt="" />Delete
+              </button>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Kamson Jill</td>
@@ -218,7 +238,27 @@
           <td>Green</td>
           <td>kamsonjill.mail</td>
           <td>0233391890</td>
-          <td><img src="public/more.svg" alt="" /></td>
+          <td>
+            <img
+              id="more3"
+              src="public/more.svg"
+              alt=""
+            /><!-- Button Overlay3 -->
+            <div class="button-overlay3" id="button-overlay3">
+              <button class="btn1" type="submit">
+                <img class="ic" src="public/Edit.svg" alt="" /><a
+                  href="index.html"
+                  >Edit</a
+                >
+              </button>
+              <button class="btn2" type="submit">
+                <img class="ic" src="public/Open eyes.svg" alt="" />View
+              </button>
+              <button class="btn3" type="submit">
+                <img class="ic" src="public/Delete.svg" alt="" />Delete
+              </button>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Lily Sam</td>
@@ -227,7 +267,27 @@
           <td>Yellow</td>
           <td>lilysam.mail</td>
           <td>0233390023</td>
-          <td><img src="public/more.svg" alt="" /></td>
+          <td>
+            <img
+              id="more4"
+              src="public/more.svg"
+              alt=""
+            /><!-- Button Overlay3 -->
+            <div class="button-overlay4" id="button-overlay4">
+              <button class="btn1" type="submit">
+                <img class="ic" src="public/Edit.svg" alt="" /><a
+                  href="index.html"
+                  >Edit</a
+                >
+              </button>
+              <button class="btn2" type="submit">
+                <img class="ic" src="public/Open eyes.svg" alt="" />View
+              </button>
+              <button class="btn3" type="submit">
+                <img class="ic" src="public/Delete.svg" alt="" />Delete
+              </button>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>Ojo Wale</td>
@@ -236,7 +296,27 @@
           <td>Black</td>
           <td>ojowale.mail</td>
           <td>0233399997</td>
-          <td><img src="public/more.svg" alt="" /></td>
+          <td>
+            <img
+              id="more5"
+              src="public/more.svg"
+              alt=""
+            /><!-- Button Overlay3 -->
+            <div class="button-overlay5" id="button-overlay5">
+              <button class="btn1" type="submit">
+                <img class="ic" src="public/Edit.svg" alt="" /><a
+                  href="index.html"
+                  >Edit</a
+                >
+              </button>
+              <button class="btn2" type="submit">
+                <img class="ic" src="public/Open eyes.svg" alt="" />View
+              </button>
+              <button class="btn3" type="submit">
+                <img class="ic" src="public/Delete.svg" alt="" />Delete
+              </button>
+            </div>
+          </td>
         </tr>
       </table>
 
@@ -420,6 +500,50 @@
 
       overlay.addEventListener("click", (event) => {
         overlay.style.display = "none";
+      });
+      // Button Overlay2
+      const overlay2 = document.getElementById("button-overlay2");
+      const openOverlayButton2 = document.getElementById("more2");
+
+      openOverlayButton2.addEventListener("click", () => {
+        overlay2.style.display = "block";
+      });
+
+      overlay2.addEventListener("click", (event) => {
+        overlay2.style.display = "none";
+      });
+      // Button Overlay3
+      const overlay3 = document.getElementById("button-overlay3");
+      const openOverlayButton3 = document.getElementById("more3");
+
+      openOverlayButton3.addEventListener("click", () => {
+        overlay3.style.display = "block";
+      });
+
+      overlay3.addEventListener("click", (event) => {
+        overlay3.style.display = "none";
+      });
+      // Button Overlay4
+      const overlay4 = document.getElementById("button-overlay4");
+      const openOverlayButton4 = document.getElementById("more4");
+
+      openOverlayButton4.addEventListener("click", () => {
+        overlay4.style.display = "block";
+      });
+
+      overlay4.addEventListener("click", (event) => {
+        overlay4.style.display = "none";
+      });
+      // Button Overlay5
+      const overlay5 = document.getElementById("button-overlay5");
+      const openOverlayButton5 = document.getElementById("more5");
+
+      openOverlayButton5.addEventListener("click", () => {
+        overlay5.style.display = "block";
+      });
+
+      overlay5.addEventListener("click", (event) => {
+        overlay5.style.display = "none";
       });
 
       // Function to toggle the menu-active class
