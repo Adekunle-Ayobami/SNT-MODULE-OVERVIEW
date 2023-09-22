@@ -272,6 +272,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 /* .input-container {
         position: absolute;
@@ -460,6 +461,8 @@ td {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  position: relative;
+  left: 1em;
 }
 .form-div {
   display: flex;
