@@ -531,6 +531,21 @@ td {
   width: 20px;
 }
 
+@media (min-width: 1368px) {
+  body {
+    width: 1650px;
+  }
+  .frame-group {
+    gap: 990px;
+  }
+  .input-group {
+    left: 38.5em;
+  }
+  .logout {
+    padding-bottom: 360px;
+  }
+}
+
 @media (max-width: 500px) {
   .bell {
     display: none;
